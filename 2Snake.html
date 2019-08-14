@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    html, body { height: 100%; margin: 0; } 
+    label { font-size : 20px; color :#ffffff;  }  
+    body { background: black; display: flex; color:cyan; align-items: center; justify-content: center; font-family:-food-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"food Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; }
+    canvas { border: 1px solid white; }
+  </style>
+</head>
+<body >
+    <div>
+      <label id="p1Score"  style="color:#3dff47;float: left;"></label>      <label id="p2Score" style="float: right;color: #ff36a8;"></label>  <br>
+      <canvas width="800" height="800" id="game"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zingtouch/1.0.6/zingtouch.min.js" integrity="sha256-Lw50ZUEj1RhtvXd8muaIWaCznWkYi9VmKDbmDCOOKnw=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="2Snake.js"></script>
+</body>
+</html>
