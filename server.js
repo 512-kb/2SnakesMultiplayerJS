@@ -17,6 +17,8 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => res.sendFile(__dirname + "\\2Snake.html"));
+
 var lastUser = 0;
 var userCount = 0;
 var canvas = { width: 800, height: 800 };
