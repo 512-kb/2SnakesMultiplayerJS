@@ -2,10 +2,11 @@ const express = require("express");
 const http = require("http");
 const sockets = require("socket.io");
 const cors = require("cors");
-
 const app = express();
 const server = http.createServer(app);
 const io = sockets(server);
+
+const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname));
 app.use(
@@ -25,7 +26,7 @@ var snakes = [];
 
 var food = { x: 0, y: 0, color: "yellow" };
 
-server.listen(3000, () => {
+server.listen(port, () => {
   generateFood();
   snakes.push({
     headColor: "#3dff47",
